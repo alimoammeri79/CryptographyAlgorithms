@@ -19,7 +19,7 @@ SPACE ! " # $ % & ' ( ) * +  - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F
 ### Complexity
 
 + Space Complexity: *O(1)*.
-+ Decryption Time Complexity: *O(n)*, which *n* is the input string length. 
++ Encryption Time Complexity: *O(n)*, which *n* is the input string length. 
 + Brute-force Decryption Time Complexity: *O(m.n)*, which *n* is the input string length and *m* is number of possible values for the key (*94* in this case).
 
 ## Usage
