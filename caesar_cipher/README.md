@@ -19,7 +19,7 @@ SPACE ! " # $ % & ' ( ) * +  - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F
 ### Complexity
 
 + Space Complexity: *O(1)*.
-+ Decryption Time Complexity: *O(n)*, which *n* is the input string length. 
++ Encryption Time Complexity: *O(n)*, which *n* is the input string length. 
 + Brute-force Decryption Time Complexity: *O(m.n)*, which *n* is the input string length and *m* is number of possible values for the key (*94* in this case).
 
 ## Usage
@@ -27,7 +27,7 @@ SPACE ! " # $ % & ' ( ) * +  - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F
 ### Encryption using a specific key
 
 <pre>
-$ ./caesar_cipher.py "sample text" -k 8
+./caesar_cipher.py "sample text" -k 8
 </pre>
 
 <pre>
@@ -37,7 +37,7 @@ $ ./caesar_cipher.py "sample text" -k 8
 ### Decryption using a specific key
 
 <pre>
-$ ./caesar_cipher.py '{iuxtm(|m!|' -k -8
+./caesar_cipher.py '{iuxtm(|m!|' -k -8
 </pre>
 
 <pre>
@@ -47,7 +47,7 @@ $ ./caesar_cipher.py '{iuxtm(|m!|' -k -8
 ### Brute-force Decryption
 
 <pre>
-$ ./caesar_cipher.py '{iuxtm(|m!|' -f | head -n 10
+./caesar_cipher.py '{iuxtm(|m!|' -f | head -n 10
 </pre>
 
 <pre>
@@ -61,4 +61,10 @@ key #7: tbnqmf!ufyu
 key #8: sample text
 key #9: r`lokd~sdws
 key #10: q_knjc}rcvr
+</pre>
+
+### Running tests
+
+<pre>
+python3 -m unittest -v
 </pre>
